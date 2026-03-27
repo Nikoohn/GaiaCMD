@@ -1,14 +1,13 @@
 [build-system]
 requires      = ["setuptools>=61"]
-build-backend = "setuptools.backends.legacy:build"
+build-backend = "setuptools.build_meta"
 
 [project]
 name            = "gaiacmd"
 version         = "0.1.0"
 description     = "Gaia CMD plotter for TESS white dwarf pulsation catalogs"
-readme          = "README.md"
 requires-python = ">=3.9"
-license         = {text = "MIT"}
+license         = "MIT"
 dependencies    = [
     "matplotlib",
     "numpy",
@@ -21,3 +20,6 @@ dependencies    = [
 [project.urls]
 Homepage   = "https://github.com/Nikoohn/GaiaCMD"
 Repository = "https://github.com/Nikoohn/GaiaCMD"
+
+[tool.setuptools.packages.find]
+include = ["gaiacmd*"]
