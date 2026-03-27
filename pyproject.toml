@@ -1,0 +1,23 @@
+[build-system]
+requires      = ["setuptools>=61"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name            = "gaiacmd"
+version         = "0.1.0"
+description     = "Gaia CMD plotter for TESS white dwarf pulsation catalogs"
+readme          = "README.md"
+requires-python = ">=3.9"
+license         = {text = "MIT"}
+dependencies    = [
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "astropy",
+    "astroquery",
+    "lightkurve",
+]
+
+[project.urls]
+Homepage   = "https://github.com/Nikoohn/GaiaCMD"
+Repository = "https://github.com/Nikoohn/GaiaCMD"

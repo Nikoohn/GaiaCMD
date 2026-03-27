@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Package installer
+pip-wheel-metadata/
+
+# Runtime outputs — user-specific, don't commit
+*.pkl
+*.tmp
+*.log
+*.png
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
